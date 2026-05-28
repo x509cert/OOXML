@@ -16,6 +16,34 @@ dotnet run -- path\to\encrypted.docx [or pptx, xslx etc.]
 
 The program currently supports Agile Encryption metadata with version `4.4`.
 
+Sample output:
+
+```text
+Key Data:
+  saltSize                    : 16
+  blockSize                   : 16
+  keyBits                     : 256
+  hashSize                    : 64
+  cipherAlgorithm             : AES
+  cipherChaining              : ChainingModeCBC
+  hashAlgorithm               : SHA512
+  saltValue (or IV)           : ktwu3iMe57cJ0LTDJHwf7g==
+
+Password Encryptor:
+  spinCount                   : 100000
+  saltSize                    : 16
+  blockSize                   : 16
+  keyBits                     : 256
+  hashSize                    : 64
+  cipherAlgorithm             : AES
+  cipherChaining              : ChainingModeCBC
+  hashAlgorithm               : SHA512
+  saltValue (or IV)           : p8MRLOBj/a5MOYG1tvfA/Q==
+  encryptedVerifierHashInput  : D8jQbWvjyPK8uWa1Z/0hiw==
+  encryptedVerifierHashValue  : ikHKt4eXSu9Pemxqfen8zPDq/Z8WnJlfv056VKGe/ELkiIuv9EedAm54/QsfCIntPmakyTrTwfL+EoKVqcelUw==
+  encryptedKeyValue           : p0lVCnKVdfJnf/s0HkVK/KrmggxSpYbeH69p8MBvahw=
+```
+
 ## Dependency
 
 This project uses [OpenMcdf](https://www.nuget.org/packages/OpenMcdf/) to read the OLE compound file structure used by encrypted OOXML packages.
