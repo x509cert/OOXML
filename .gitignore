@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Local documents can contain private data; keep samples out of the public repo.
+*.docx
