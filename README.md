@@ -11,7 +11,7 @@ https://learn.microsoft.com/en-us/openspecs/office_file_formats/ms-offcrypto/3c3
 ## Usage
 
 ```powershell
-dotnet run -- path\to\encrypted.docx [or pptx, xslx etc.]
+dotnet run -- path\to\encrypted.docx [or pptx, xlsx etc.]
 ```
 
 The program currently supports Agile Encryption metadata with version `4.4`.
